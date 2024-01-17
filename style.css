@@ -131,6 +131,9 @@ main > * {
 }
 
 .result__button {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
   flex-shrink: 0;
   background-color: transparent;
   border: none;
@@ -144,6 +147,12 @@ main > * {
 
 .result__button:is(:hover, :focus-visible) svg {
   fill: var(--clr-neutral-100);
+}
+
+.result__text {
+  font-size: var(--fs-body);
+  color: var(--clr-accent-green);
+  text-transform: uppercase;
 }
 
 .main__form {

@@ -14,8 +14,11 @@ slider.addEventListener("input", () => {
 // Copy button
 
 const copy = document.getElementById("copy");
+const copy_text = document.getElementById("copy-text");
 const result = document.getElementById("result");
 
 copy.addEventListener("click", () => {
   navigator.clipboard.writeText(result.innerText);
+  copy_text.innerText = "Copied";
+  setTimeout(() => (copy_text.innerText = ""), 1500);
 });
