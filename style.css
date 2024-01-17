@@ -163,10 +163,16 @@ main > * {
 }
 
 .form__slider {
+  --percent: 50%;
+
   appearance: none;
   margin-bottom: 1.5rem;
   height: 0.5rem;
-  background: var(--clr-neutral-400);
+  background: linear-gradient(
+    90deg,
+    var(--clr-accent-green) var(--percent),
+    var(--clr-neutral-400) var(--percent)
+  );
 }
 
 .form__slider::-webkit-slider-thumb {

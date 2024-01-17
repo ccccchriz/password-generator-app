@@ -36,9 +36,15 @@
       <form action="" class="main__form">
         <label for="length" class="form__length">
           Character Length
-          <span aria-hidden="true" id="display-length">10</span>
+          <span aria-hidden="true" id="display-length">100</span>
         </label>
-        <input type="range" name="length" id="length" class="form__slider" />
+        <input
+          type="range"
+          name="length"
+          id="length"
+          class="form__slider"
+          max="200"
+        />
 
         <label class="form__checkbox">
           <input type="checkbox" name="uppercase" id="uppercase" />Include
@@ -83,5 +89,6 @@
         </button>
       </form>
     </main>
+    <script src="slider.js"></script>
   </body>
 </html>
