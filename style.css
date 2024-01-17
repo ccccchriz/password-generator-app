@@ -153,6 +153,13 @@ main > * {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-size: 1rem;
+  color: var(--clr-neutral-100);
+}
+
+.form__length span {
+  font-size: var(--fs-heading-m);
+  color: var(--clr-accent-green);
 }
 
 .form__slider {
@@ -177,16 +184,6 @@ main > * {
   border-radius: 50%;
   background-color: var(--clr-neutral-100);
   border: none;
-}
-
-.form__length {
-  font-size: 1rem;
-  color: var(--clr-neutral-100);
-}
-
-.form__length span {
-  font-size: var(--fs-heading-m);
-  color: var(--clr-accent-green);
 }
 
 .form__checkbox {
@@ -273,4 +270,43 @@ main > * {
 .form__submit svg {
   width: 0.75rem;
   height: 0.75rem;
+}
+
+@media (min-width: 34rem) {
+  main {
+    gap: 1.5rem;
+  }
+
+  .main__title {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+  }
+
+  .main__result {
+    padding: 1.125rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: var(--fs-heading-l);
+  }
+
+  .main__form {
+    padding: 2rem;
+  }
+
+  .form__length {
+    font-size: var(--fs-body);
+  }
+
+  .form__length span {
+    font-size: var(--fs-heading-l);
+  }
+
+  .form__checkbox {
+    font-size: var(--fs-body);
+  }
+
+  .form__strength {
+    padding: 1.5rem 2rem;
+    margin: 1rem 0;
+  }
 }
