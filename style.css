@@ -125,7 +125,13 @@ main > * {
   padding: 1rem;
 }
 
+.main__result > p {
+  min-width: 0;
+  word-break: break-all;
+}
+
 .result__button {
+  flex-shrink: 0;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -240,20 +246,20 @@ main > * {
   border: 0.125rem solid var(--clr-neutral-100);
 }
 
-.very-low div:nth-child(1) {
+.very-low div:nth-child(2) {
   background-color: var(--clr-accent-red);
   border: 0.125rem solid var(--clr-accent-red);
 }
 
-.low div:nth-child(1),
-.low div:nth-child(2) {
+.low div:nth-child(2),
+.low div:nth-child(3) {
   background-color: var(--clr-accent-orange);
   border: 0.125rem solid var(--clr-accent-orange);
 }
 
-.medium div:nth-child(1),
 .medium div:nth-child(2),
-.medium div:nth-child(3) {
+.medium div:nth-child(3),
+.medium div:nth-child(4) {
   background-color: var(--clr-accent-yellow);
   border: 0.125rem solid var(--clr-accent-yellow);
 }

@@ -19,7 +19,7 @@
     <main>
       <h1 class="main__title">Password Generator</h1>
       <div class="main__result">
-        <p>P4$5W0rD!</p>
+        <p id="result">P4$5W0rD!</p>
         <button type="button" class="result__button">
           <svg
             viewBox="0 0 21 24"
@@ -33,7 +33,7 @@
           </svg>
         </button>
       </div>
-      <form action="" class="main__form">
+      <form action="" class="main__form" id="main-form">
         <label for="length" class="form__length">
           Character Length
           <span aria-hidden="true" id="display-length">100</span>
@@ -66,8 +66,8 @@
 
         <div class="form__strength">
           Strength
-          <div class="strength__level">
-            <span>medium</span>
+          <div class="strength__level very-low" id="strength">
+            <span>very low</span>
             <div class="strength__bar" aria-hidden="true"></div>
             <div class="strength__bar" aria-hidden="true"></div>
             <div class="strength__bar" aria-hidden="true"></div>
@@ -90,5 +90,6 @@
       </form>
     </main>
     <script src="slider.js"></script>
+    <script src="form.js"></script>
   </body>
 </html>
