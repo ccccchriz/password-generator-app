@@ -49,7 +49,6 @@ form.addEventListener("submit", (event) => {
   let odds = new Array(char.length).fill(Math.max(2, length / 2));
   let password = "";
   while (password.length < length) {
-    console.log(password);
     let randomNumber = Math.random() * odds.reduce((a, b) => a + b, 0);
     odds.every((el, index, array) => {
       if (randomNumber < array.slice(0, index + 1).reduce((a, b) => a + b)) {
