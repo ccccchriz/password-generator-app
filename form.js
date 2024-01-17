@@ -1,8 +1,8 @@
 const form = document.getElementById("main-form");
-// const slider = form.querySelector("#length"); // Gotten from slider.js
+// const slider = form.querySelector("#length"); // Gotten from utils.js
 const checkboxes = [...form.querySelectorAll("label > input")];
 const strengthBox = document.getElementById("strength");
-const result = document.getElementById("result");
+// const result = document.getElementById("result"); // Gotten from utils.js
 
 const characters = [
   "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
