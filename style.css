@@ -197,8 +197,15 @@ main > * {
   width: 1.75rem;
   border-radius: 50%;
   background-color: var(--clr-neutral-100);
+  border: 1px solid var(--clr-neutral-100);
   border: none;
   cursor: pointer;
+  transition: 300ms;
+}
+
+.form__slider::-webkit-slider-thumb:is(:hover, :focus-visible) {
+  background-color: var(--clr-neutral-300);
+  border: 1px solid var(--clr-accent-green);
 }
 
 .form__slider::-moz-range-thumb {
@@ -206,10 +213,16 @@ main > * {
   width: 1.75rem;
   border-radius: 50%;
   background-color: var(--clr-neutral-100);
+  border: 1px solid var(--clr-neutral-100);
   border: none;
   cursor: pointer;
+  transition: 300ms;
 }
 
+.form__slider::-moz-range-thumb:is(:hover, :focus-visible) {
+  background-color: var(--clr-neutral-300);
+  border: 1px solid var(--clr-accent-green);
+}
 .form__checkbox {
   display: flex;
   align-items: center;
@@ -223,6 +236,7 @@ main > * {
   height: 1.25rem;
   appearance: none;
   border: var(--clr-neutral-100) 0.125rem solid;
+  transition: 300ms;
 }
 
 .form__checkbox > input:checked {
@@ -231,6 +245,10 @@ main > * {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+  border: var(--clr-accent-green) 0.125rem solid;
+}
+
+.form__checkbox:is(:hover, :focus-visible) > input {
   border: var(--clr-accent-green) 0.125rem solid;
 }
 
