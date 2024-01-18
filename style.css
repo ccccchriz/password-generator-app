@@ -188,6 +188,7 @@ main > * {
     var(--clr-accent-green) var(--percent),
     var(--clr-neutral-400) var(--percent)
   );
+  cursor: pointer;
 }
 
 .form__slider::-webkit-slider-thumb {
@@ -197,6 +198,7 @@ main > * {
   border-radius: 50%;
   background-color: var(--clr-neutral-100);
   border: none;
+  cursor: pointer;
 }
 
 .form__slider::-moz-range-thumb {
@@ -205,6 +207,7 @@ main > * {
   border-radius: 50%;
   background-color: var(--clr-neutral-100);
   border: none;
+  cursor: pointer;
 }
 
 .form__checkbox {
@@ -212,6 +215,7 @@ main > * {
   align-items: center;
   font-size: 1rem;
   gap: 1.5rem;
+  cursor: pointer;
 }
 
 .form__checkbox > input {
@@ -285,12 +289,24 @@ main > * {
   justify-content: center;
   gap: 1rem;
   background-color: var(--clr-accent-green);
-  border: none;
+  border: 2px solid var(--clr-accent-green);
+  transition: 300ms;
+  cursor: pointer;
 }
 
 .form__submit svg {
   width: 0.75rem;
   height: 0.75rem;
+  transition: 300ms;
+}
+
+.form__submit:is(:hover, :focus-visible) {
+  background-color: transparent;
+  color: var(--clr-accent-green);
+}
+
+.form__submit:is(:hover, :focus-visible) svg {
+  fill: var(--clr-accent-green);
 }
 
 @media (min-width: 34rem) {
